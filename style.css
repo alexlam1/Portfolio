@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 750px;
+}
+
+div {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+div#container {
+  width: 100%;
+  min-height: 750px;
+  font-family: 'Bellefair', serif;
+}
+
+div#header {
+  width: inherit;
+  height: 700px;
+  background-image:url("./portfolioHeader.jpg");
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 2;
+  min-height: 50px;
+  display: flex;
+  flex-direction: row;
+  background: rgba(82, 60, 136, 0.22);
+}
+
+nav, nav ul, nav > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: inherit;
+}
+
+nav > div, nav > ul {
+  display: flex;
+  flex-direction: row;
+  cursor: crosshair;
+}
+
+nav > div {
+  flex: 1;
+  margin-left: 50px;
+}
+
+nav > ul {
+  flex: 2;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+nav > ul > li {
+  margin: 10px;
+}
+
+nav > div > p {
+  margin: 10px;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(82, 60, 136, 0.57);
+  z-index: 2;
+  width: inherit;
+  height: inherit;
+}
+
+.header-background-image{
+  background: rgba(82, 60, 136, 0.57);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+p.landing-intro {
+  font-size: 38px;
+  width: 38px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+p.landing-tags {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+#header-info span {
+  display: inline-block;
+  border-top: 3px solid white;
+  width: 105px;
+}
+
+div#header-info {
+  margin-left: 50px;
+}
